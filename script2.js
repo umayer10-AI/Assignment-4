@@ -8,5 +8,7 @@ main.addEventListener("click", (e) => {
         let cardParent = document.querySelector("#card-container").children.length;
         document.querySelector(".total").innerText = cardParent;
         document.querySelector(".t").innerText = cardParent;
+        document.querySelector(".t2").innerText = cardParent;
+        document.querySelector(".t3").innerText = cardParent;
     }
 })
