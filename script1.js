@@ -72,9 +72,6 @@ document.querySelector(".total").innerText = cardParent;
 document.querySelector(".t").innerText = cardParent;
 document.querySelector(".t2").innerText = cardParent;
 document.querySelector(".t3").innerText = cardParent;
-// document.querySelector(".tt1").innerText = s1.children.length;
-// document.querySelector(".tt2").innerText = s2.children.length;
-
 
 
 let parent = document.getElementById("card-container")
@@ -87,6 +84,8 @@ parent.addEventListener("click",(e) => {
         let applicable = p.querySelector(".applicable").innerText;
         let applicable2 = p.querySelector(".applicable");
         let longName = p.querySelector(".l-name").innerText;
+        p.classList.remove("border-l-4","border-red-400");
+        p.classList.add("border-l-4","border-green-400");
 
         interViewC++;
         document.querySelector(".interViewC").innerText = interViewC;
@@ -133,6 +132,8 @@ parent.addEventListener("click",(e) => {
         let applicable = p.querySelector(".applicable").innerText;
         let applicable2 = p.querySelector(".applicable");
         let longName = p.querySelector(".l-name").innerText;
+        p.classList.remove("border-l-4","border-green-400");
+        p.classList.add("border-l-4","border-red-400");
 
         rejectedC++;
         document.querySelector(".rejectedC").innerText = rejectedC;
