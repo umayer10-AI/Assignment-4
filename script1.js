@@ -122,7 +122,6 @@ parent.addEventListener("click",(e) => {
         `;
 
         section1.appendChild(div);
-
     }
     else if(e.target.matches(".Rejected-btn")){
         let p = e.target.closest(".card-parent");
@@ -190,6 +189,11 @@ s1.addEventListener("click", (e) => {
         document.querySelector(".rejectedC").innerText = rejectedC;
         c2++;
         document.querySelector(".tt2").innerText = c2;
+
+        let f1 = document.querySelector(".blank");
+        if(interViewC === 0){
+            f1.classList.remove("hidden");
+        }
     }
 })
 s2.addEventListener("click", (e) => {
@@ -208,6 +212,11 @@ s2.addEventListener("click", (e) => {
         document.querySelector(".rejectedC").innerText = rejectedC;
         c2--;
         document.querySelector(".tt2").innerText = c2;
+        
+        let f1 = document.querySelector(".blank");
+        if(rejectedC === 0){
+            f1.classList.remove("hidden");
+        }
     }
 })
 
